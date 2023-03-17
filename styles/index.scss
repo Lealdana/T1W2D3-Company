@@ -1,0 +1,157 @@
+$primary-background: #ffb6b6;
+
+@mixin background-stuff () {
+    background-color: $primary-background;
+    padding: 18px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-color: #a5a5a5a5;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+// Header Section//
+
+header {
+    @include background-stuff();
+    
+
+    .logo-name {
+        margin-bottom: 24px;
+        margin-top: 12px;
+        
+
+            &:hover {
+            animation: shake 1s infinite;
+           
+            }
+            
+            .name {
+                margin-top: 10px;
+                font-size: 28px;
+                font-weight: 600;
+                
+                .coder-text {
+                    color: #45A7C5;
+                    
+                }
+                .academy-text {
+                    color: #1c3c5c;
+                }
+            }
+            
+    }
+    
+        @keyframes shake {
+            0% { transform: translateX(0) }
+  25% { transform: translateY(-3px) }
+  35% { transform: translateY(-3px) rotate(17deg) }
+  55% { transform: translateY(-3px) rotate(-17deg) }
+  65% { transform: translateY(-3px) rotate(17deg) }
+  75% { transform: translateY(-3px) rotate(-17deg) }
+  100% { transform: translateY(0) rotate(0) }
+           }
+
+    .nav-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        transition: 1.5s;
+    }
+        
+        a {
+            text-decoration: none;
+            color: #45A7C5;
+            transition: 1.5s;
+        }
+
+        .Services {
+            
+            &:hover {
+            scale: 1.5;
+            }
+        }
+        .About {
+            
+            &:hover {
+            scale: 1.5;
+            }
+        }
+        .Contact {
+            
+            &:hover {
+            scale: 1.5;
+            }
+        }
+
+       
+    }
+       
+
+body {
+    background-color: #a5a5a5;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+footer {
+    @include background-stuff();
+
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+        color: #ffb6b6;
+        transition: 2s;
+
+                              
+        }
+
+        i {
+            font-size: 30px;
+            transition: 2s;
+            
+                &:hover {
+                scale: 1.5;
+                
+            }
+        }
+
+    a {
+       
+        
+        i {
+            margin-bottom: 20px;
+            color: rgb(32, 36, 87);
+            
+                
+            
+    }
+        
+
+    }
+        
+    }
+
+        .info { 
+            color: #45A7C5;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        p {
+            margin: 0px
+        }

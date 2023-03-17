@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  background-color: rgba(165, 165, 165, 0.6470588235);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #ffb6b6;
+  padding: 18px;
+  text-align: center;
+}
+header .logo-name {
+  margin-bottom: 24px;
+  margin-top: 12px;
+}
+header .logo-name:hover {
+  animation: shake 1s infinite;
+}
+header .logo-name .name {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 600;
+}
+header .logo-name .name .coder-text {
+  color: #45A7C5;
+}
+header .logo-name .name .academy-text {
+  color: #1c3c5c;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-3px);
+  }
+  35% {
+    transform: translateY(-3px) rotate(17deg);
+  }
+  55% {
+    transform: translateY(-3px) rotate(-17deg);
+  }
+  65% {
+    transform: translateY(-3px) rotate(17deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(-17deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+header .nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  transition: 1.5s;
+}
+header a {
+  text-decoration: none;
+  color: #45A7C5;
+  transition: 1.5s;
+}
+header .Services:hover {
+  scale: 1.5;
+}
+header .About:hover {
+  scale: 1.5;
+}
+header .Contact:hover {
+  scale: 1.5;
+}
+
+body {
+  background-color: #a5a5a5;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #ffb6b6;
+  padding: 18px;
+  text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  color: #ffb6b6;
+  transition: 2s;
+}
+footer i {
+  font-size: 30px;
+  transition: 2s;
+}
+footer i:hover {
+  scale: 1.5;
+}
+footer a i {
+  margin-bottom: 20px;
+  color: rgb(32, 36, 87);
+}
+
+.info {
+  color: #45A7C5;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0px;
+}/*# sourceMappingURL=index.css.map */
